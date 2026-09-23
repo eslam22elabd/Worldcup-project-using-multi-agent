@@ -1,0 +1,3 @@
+# Root-level requirements file so Railway detects this as a Python project
+# and sets up the Python runtime correctly.
+-r backend/requirements.txt
