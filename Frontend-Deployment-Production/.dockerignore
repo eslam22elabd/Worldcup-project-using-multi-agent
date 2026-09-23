@@ -1,0 +1,14 @@
+.git
+.gitignore
+.pytest_cache
+.venv
+venv
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+frontend/node_modules
+frontend/dist
+.env
+*.log
+upstream_README.md

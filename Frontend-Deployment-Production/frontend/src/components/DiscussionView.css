@@ -1,0 +1,184 @@
+/* Discussion View — design tokens (light theme)
+   ------------------------------------------------------------
+   Concept unchanged: a match-day analysis dossier / rundown, not a
+   chat app. Switched to a light, paper-like background instead of
+   pitch-night dark, while keeping the same football-grounded accent
+   pair (floodlight gold + pitch green) so the identity carries over.
+   Agent accent colors are darkened versions of the original palette
+   so they keep enough contrast against a light background.
+   ------------------------------------------------------------ */
+
+:root {
+  --bg: #f6f4ee;
+  --surface: #ffffff;
+  --border: #ddd8cc;
+  --text: #1c231e;
+  --text-muted: #6b7568;
+  --accent-gold: #b9791f;
+  --accent-pitch: #2f6f52;
+
+  --agent-color-0: #b9791f; /* gold */
+  --agent-color-1: #2f6f52; /* pitch green */
+  --agent-color-2: #954936; /* clay rose */
+  --agent-color-3: #3d5a78; /* slate blue */
+  --agent-color-4: #6b6023; /* olive */
+  --agent-color-5: #6b4c7a; /* plum */
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "IBM Plex Sans", "Inter", system-ui, sans-serif;
+}
+
+.discussion-view {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  padding: 2.5rem 1.5rem;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.discussion-view__header {
+  margin-bottom: 2.5rem;
+}
+
+.discussion-view__topic {
+  font-family: var(--font-display);
+  font-size: 1.9rem;
+  font-weight: 600;
+  line-height: 1.15;
+  margin: 0 0 0.75rem;
+}
+
+.discussion-view__participants {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.participant-tag {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 0.2rem 0.55rem;
+  background: var(--surface);
+}
+
+.round-block {
+  display: flex;
+  gap: 1.25rem;
+  position: relative;
+}
+
+.round-block:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  left: 1.4rem;
+  top: 3.2rem;
+  bottom: -1.5rem;
+  width: 1px;
+  background: var(--border);
+}
+
+.round-block__marker {
+  flex: 0 0 auto;
+  width: 2.8rem;
+  height: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--accent-gold);
+  border: 1px solid var(--accent-gold);
+  border-radius: 50%;
+  background: var(--surface);
+  z-index: 1;
+}
+
+.round-block__body {
+  flex: 1 1 auto;
+  padding-bottom: 2.5rem;
+  min-width: 0;
+}
+
+.message-entry {
+  border-left: 2px solid var(--agent-color, var(--accent-pitch));
+  padding: 0.15rem 0 0.15rem 0.9rem;
+  margin-bottom: 0.9rem;
+  background: var(--surface);
+  border-radius: 0 3px 3px 0;
+}
+
+.message-entry:last-child {
+  margin-bottom: 0;
+}
+
+.message-entry__header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0.55rem 0.6rem 0.55rem 0;
+  margin: 0;
+  cursor: pointer;
+  text-align: left;
+  font-family: var(--font-body);
+}
+
+.message-entry__header:hover .message-entry__agent {
+  text-decoration: underline;
+}
+
+.message-entry__chevron {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  transition: transform 0.15s ease;
+  flex: 0 0 auto;
+}
+
+.message-entry__chevron--open {
+  transform: rotate(90deg);
+}
+
+.message-entry__agent {
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  color: var(--agent-color, var(--accent-pitch));
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.message-entry__recipients {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.message-entry__preview {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-left: auto;
+  padding-left: 0.75rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 40%;
+}
+
+.message-entry__content {
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--text);
+  max-width: 68ch;
+  white-space: pre-wrap;
+  padding: 0 0.6rem 0.8rem;
+  margin: 0;
+}
+
+.discussion-view__empty {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}

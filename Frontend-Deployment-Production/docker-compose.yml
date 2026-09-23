@@ -1,0 +1,23 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: qubeterra-multiagent-platform:latest
+    container_name: qubeterra_platform
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY:-}
+      - WEEK3_PROJECT_PATH=/Multi-Agent-Collaboration/Multi-Agent-Collaboration/Multi-Agent-Collaboration
+      - WEEK4_PROJECT_PATH=/Analytics-Intelligence-Layer
+    volumes:
+      - ../Multi-Agent-Collaboration:/Multi-Agent-Collaboration:ro
+      - ../Analytics-Intelligence-Layer:/Analytics-Intelligence-Layer:ro
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "python -c \"import urllib.request; urllib.request.urlopen('http://localhost:8000/health')\" || exit 1"]
+      interval: 20s
+      timeout: 5s
+      retries: 3

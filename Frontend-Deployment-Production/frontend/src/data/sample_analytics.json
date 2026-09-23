@@ -1,0 +1,435 @@
+{
+  "discussion_id": "disc_bc528f51d882",
+  "opinion_change": {
+    "web_search_analyst": {
+      "is_computable": true,
+      "reason": "",
+      "changes": [
+        {
+          "from_round": 1,
+          "to_round": 2,
+          "change": 1.0
+        },
+        {
+          "from_round": 2,
+          "to_round": 3,
+          "change": 0.0
+        }
+      ]
+    },
+    "tactical_analyst": {
+      "is_computable": true,
+      "reason": "",
+      "changes": [
+        {
+          "from_round": 1,
+          "to_round": 2,
+          "change": 0.4
+        },
+        {
+          "from_round": 2,
+          "to_round": 3,
+          "change": 0.0
+        }
+      ]
+    },
+    "historical_context_analyst": {
+      "is_computable": true,
+      "reason": "",
+      "changes": [
+        {
+          "from_round": 1,
+          "to_round": 2,
+          "change": 0.1
+        },
+        {
+          "from_round": 2,
+          "to_round": 3,
+          "change": 0.4
+        }
+      ]
+    },
+    "player_spotlight_analyst": {
+      "is_computable": true,
+      "reason": "",
+      "changes": [
+        {
+          "from_round": 1,
+          "to_round": 2,
+          "change": 1.0
+        },
+        {
+          "from_round": 2,
+          "to_round": 3,
+          "change": 0.0
+        }
+      ]
+    },
+    "fan_narrative_analyst": {
+      "is_computable": true,
+      "reason": "",
+      "changes": [
+        {
+          "from_round": 1,
+          "to_round": 2,
+          "change": 0.0
+        },
+        {
+          "from_round": 2,
+          "to_round": 3,
+          "change": 0.0
+        }
+      ]
+    }
+  },
+  "agreement": [
+    {
+      "round_number": 1,
+      "score": 0.74,
+      "num_agents": 5,
+      "is_computable": true,
+      "reason": ""
+    },
+    {
+      "round_number": 2,
+      "score": 0.92,
+      "num_agents": 5,
+      "is_computable": true,
+      "reason": ""
+    },
+    {
+      "round_number": 3,
+      "score": 1.0,
+      "num_agents": 5,
+      "is_computable": true,
+      "reason": ""
+    }
+  ],
+  "influence": {
+    "web_search_analyst": {
+      "score": -1.0,
+      "is_computable": true,
+      "reason": "",
+      "num_observations": 2
+    },
+    "tactical_analyst": {
+      "score": 1.0,
+      "is_computable": true,
+      "reason": "",
+      "num_observations": 2
+    },
+    "historical_context_analyst": {
+      "score": 0.780869,
+      "is_computable": true,
+      "reason": "",
+      "num_observations": 2
+    },
+    "player_spotlight_analyst": {
+      "score": null,
+      "is_computable": false,
+      "reason": "No opinion changes observed in recipient peers across the observed rounds.",
+      "num_observations": 2
+    },
+    "fan_narrative_analyst": {
+      "score": 1.0,
+      "is_computable": true,
+      "reason": "",
+      "num_observations": 2
+    }
+  },
+  "sentiment": [
+    {
+      "message_id": "msg_beb6446bec16",
+      "agent": "web_search_analyst",
+      "round": 1,
+      "score": 0.0,
+      "confidence": 0.7,
+      "key_arguments": [
+        "In a gripping showdown that culminated in a tense World Cup final, Spain edged out Argentina with a 1-0 victory, thanks to Ferran Torres' decisive goal in extra time",
+        "The match, held on July 19, 2026, at the New York New Jersey Stadium, showcased Spain's tactical dominance, particularly after Argentina was reduced to ten men when Enzo Fern\u00e1ndez received a second yellow card late in the second half",
+        "Spain's performance was characterized by controlled possession and a relentless attack, reflected in their impressive expected goals (xG) tally of 1"
+      ],
+      "is_computable": true
+    },
+    {
+      "message_id": "msg_def04f6f9e8e",
+      "agent": "web_search_analyst",
+      "round": 2,
+      "score": 1.0,
+      "confidence": 0.8,
+      "key_arguments": [
+        "I appreciate the insights from the other analyst, and while there are many compelling points made, I would maintain my original stance with some refinements for clarity and precision",
+        "The match indeed unfolded as a dramatic clash of titans, with Spain showcasing tactical dominance that effectively nullified Argentina's offensive capabilities",
+        "The atmosphere in the New York New Jersey Stadium was electric, and the emotions ran high, particularly with the weight of history resting on both teams"
+      ],
+      "is_computable": true
+    },
+    {
+      "message_id": "msg_e46821a910f0",
+      "agent": "web_search_analyst",
+      "round": 3,
+      "score": 1.0,
+      "confidence": 0.7,
+      "key_arguments": [
+        "After reviewing the insights from the other analysts alongside my previous findings, I would refine my opinion rather than completely revise it",
+        "Both analysts capture the emotional weight and narrative richness surrounding the match, particularly the poignant storyline of Lionel Messi potentially playing his final World Cup match",
+        "They highlight the electric atmosphere in the stadium, which I also noted, and emphasize the tactical brilliance of Spain throughout the fixture"
+      ],
+      "is_computable": true
+    },
+    {
+      "message_id": "msg_19419d39aa3b",
+      "agent": "tactical_analyst",
+      "round": 1,
+      "score": 0.6,
+      "confidence": 0.7,
+      "key_arguments": [
+        "In analyzing the 2026 World Cup final between Spain and Argentina, we can draw several tactical insights focused on the formations, pressing strategies, and key moments that influenced the match's outcome",
+        "### Formation and Tactical Plan",
+        "Spain deployed a **4-2-3-1** formation, which provided them with a strong midfield presence and allowed for fluid attacking transitions"
+      ],
+      "is_computable": true
+    },
+    {
+      "message_id": "msg_ce55365c4a44",
+      "agent": "tactical_analyst",
+      "round": 2,
+      "score": 1.0,
+      "confidence": 0.8,
+      "key_arguments": [
+        "I appreciate the insights shared by both analysts, and I maintain my original stance, with slight refinements for clarity and emphasis on tactical execution",
+        "### Tactical Dominance",
+        "Spain\u2019s victory was indeed a testament to their tactical control throughout the match"
+      ],
+      "is_computable": true
+    },
+    {
+      "message_id": "msg_ca9295be279f",
+      "agent": "tactical_analyst",
+      "round": 3,
+      "score": 1.0,
+      "confidence": 0.7,
+      "key_arguments": [
+        "After reviewing the insights shared by the other analysts, I maintain my original opinion with some refinements to emphasize specific tactical elements and the broader implications of the match",
+        "### Tactical Execution and Control",
+        "The analysts effectively highlight Spain's tactical dominance, which was clear throughout the match"
+      ],
+      "is_computable": true
+    },
+    {
+      "message_id": "msg_241f97fc6fa9",
+      "agent": "historical_context_analyst",
+      "round": 1,
+      "score": 0.5,
+      "confidence": 0.7,
+      "key_arguments": [
+        "Historically speaking, the clash between Spain and Argentina in the 2026 FIFA World Cup final was a significant moment in football, echoing the rich narratives of both nations in international tournaments",
+        "Spain's 1-0 victory, secured by Ferran Torres in extra time, marks a pivotal chapter in their footballing history, as they claimed their second World Cup title, a feat they last achieved in 2010",
+        "This victory not only underscores Spain's resurgence on the world stage but also highlights the tactical evolution of their play, reminiscent of their dominant possession-based style that brought them success over a decade ago"
+      ],
+      "is_computable": true
+    },
+    {
+      "message_id": "msg_24930c122277",
+      "agent": "historical_context_analyst",
+      "round": 2,
+      "score": 0.6,
+      "confidence": 0.7,
+      "key_arguments": [
+        "Building on the insights shared by the tactical analysts, I maintain my original stance while also emphasizing the historical context that enriches our understanding of this significant match",
+        "Historically speaking, Spain's tactical dominance in the 2026 World Cup final against Argentina is consistent with their evolution as a footballing power",
+        "Their 4-2-3-1 formation allowed for a fluid midfield control, reminiscent of their successful campaigns in the late 2000s and early 2010s when they clinched their first World Cup in 2010 and dominated European football"
+      ],
+      "is_computable": true
+    },
+    {
+      "message_id": "msg_1dc53936045e",
+      "agent": "historical_context_analyst",
+      "round": 3,
+      "score": 1.0,
+      "confidence": 0.7,
+      "key_arguments": [
+        "Reflecting on the insights provided by the tactical analysts, I maintain my original opinion while reinforcing it with historical context that enriches our understanding of the 2026 World Cup final between Spain and Argentina",
+        "Historically speaking, Spain's tactical dominance aligns with their evolution as a footballing power, particularly following their successful era in the late 2000s and early 2010s",
+        "Their 4-2-3-1 formation not only allowed for fluidity in midfield but also mirrored the possession-based style that brought them previous success"
+      ],
+      "is_computable": true
+    },
+    {
+      "message_id": "msg_3be0c724ddd4",
+      "agent": "player_spotlight_analyst",
+      "round": 1,
+      "score": 0.0,
+      "confidence": 0.7,
+      "key_arguments": [
+        "In the World Cup final on July 19, 2026, Spain triumphed over Argentina with a 1-0 scoreline, thanks to Ferran Torres's decisive goal in the 106th minute",
+        "This match was a showcase of individual and collective performances that defined the outcome",
+        "### MVP: Ferran Torres"
+      ],
+      "is_computable": true
+    },
+    {
+      "message_id": "msg_0d335d712543",
+      "agent": "player_spotlight_analyst",
+      "round": 2,
+      "score": 1.0,
+      "confidence": 0.8,
+      "key_arguments": [
+        "I appreciate the historical context provided by my colleagues, but I maintain my stance on the MVP selection and the key insights regarding the match outcome",
+        "### MVP: Ferran Torres",
+        "Ferran Torres's performance remains central to the analysis"
+      ],
+      "is_computable": true
+    },
+    {
+      "message_id": "msg_0fb0383af93a",
+      "agent": "player_spotlight_analyst",
+      "round": 3,
+      "score": 1.0,
+      "confidence": 0.8,
+      "key_arguments": [
+        "I appreciate the comprehensive historical context provided by my colleagues, but I maintain my original stance regarding the MVP selection and key moments of the match",
+        "### MVP: Ferran Torres",
+        "Ferran Torres's performance remains central to the analysis, as his goal in the 106th minute was not just a moment of individual brilliance, but also a product of his strategic understanding of the game"
+      ],
+      "is_computable": true
+    },
+    {
+      "message_id": "msg_40703dcccbce",
+      "agent": "fan_narrative_analyst",
+      "round": 1,
+      "score": 1.0,
+      "confidence": 0.7,
+      "key_arguments": [
+        "The World Cup final between Spain and Argentina on July 19, 2026, unfolded as a dramatic clash of titans, echoing with the hopes and dreams of two footballing giants",
+        "Spain emerged victorious with a narrow 1-0 win, courtesy of Ferran Torres's decisive strike in the 106th minute, a moment that will be etched in the annals of football history, not just for its significance in the match, but for the heart-wrenching narrative it spun around Lionel Messi and his Argentina side",
+        "The atmosphere in the New York New Jersey Stadium was electric, a cauldron of anticipation as fans draped in their national colors filled the stands, each chant and cheer resonating with the weight of history"
+      ],
+      "is_computable": true
+    },
+    {
+      "message_id": "msg_e17cb9f773ca",
+      "agent": "fan_narrative_analyst",
+      "round": 2,
+      "score": 1.0,
+      "confidence": 0.7,
+      "key_arguments": [
+        "The World Cup final on July 19, 2026, between Spain and Argentina was a breathtaking encounter that unfolded like a grand narrative, rich with emotion and drama",
+        "Spain emerged victorious with a hard-fought 1-0 win, thanks to Ferran Torres's stunning goal in the 106th minute, a moment that will resonate for years to come",
+        "The atmosphere at the New York New Jersey Stadium was electric, with fans from both sides creating a vibrant tapestry of color and sound"
+      ],
+      "is_computable": true
+    },
+    {
+      "message_id": "msg_5e8976de7e06",
+      "agent": "fan_narrative_analyst",
+      "round": 3,
+      "score": 1.0,
+      "confidence": 0.7,
+      "key_arguments": [
+        "The World Cup final on July 19, 2026, between Spain and Argentina was a momentous clash, and the narrative surrounding Ferran Torres as the standout player remains compelling",
+        "I appreciate the detailed analyses provided by my colleagues, which highlight key moments and players, emphasizing the significance of Torres's goal in the 106th minute as a pivotal moment in the match",
+        "I maintain my stance that Ferran Torres is rightly celebrated as the MVP of this match"
+      ],
+      "is_computable": true
+    }
+  ],
+  "stances": {
+    "web_search_analyst": [
+      {
+        "round": 1,
+        "stance": 0.0
+      },
+      {
+        "round": 2,
+        "stance": 1.0
+      },
+      {
+        "round": 3,
+        "stance": 1.0
+      }
+    ],
+    "tactical_analyst": [
+      {
+        "round": 1,
+        "stance": 0.6
+      },
+      {
+        "round": 2,
+        "stance": 1.0
+      },
+      {
+        "round": 3,
+        "stance": 1.0
+      }
+    ],
+    "historical_context_analyst": [
+      {
+        "round": 1,
+        "stance": 0.5
+      },
+      {
+        "round": 2,
+        "stance": 0.6
+      },
+      {
+        "round": 3,
+        "stance": 1.0
+      }
+    ],
+    "player_spotlight_analyst": [
+      {
+        "round": 1,
+        "stance": 0.0
+      },
+      {
+        "round": 2,
+        "stance": 1.0
+      },
+      {
+        "round": 3,
+        "stance": 1.0
+      }
+    ],
+    "fan_narrative_analyst": [
+      {
+        "round": 1,
+        "stance": 1.0
+      },
+      {
+        "round": 2,
+        "stance": 1.0
+      },
+      {
+        "round": 3,
+        "stance": 1.0
+      }
+    ]
+  },
+  "interaction_graph": {
+    "nodes": [
+      "web_search_analyst",
+      "tactical_analyst",
+      "historical_context_analyst",
+      "player_spotlight_analyst",
+      "fan_narrative_analyst"
+    ],
+    "edges": {
+      "web_search_analyst": [
+        "tactical_analyst"
+      ],
+      "tactical_analyst": [
+        "historical_context_analyst"
+      ],
+      "historical_context_analyst": [
+        "player_spotlight_analyst"
+      ],
+      "player_spotlight_analyst": [
+        "fan_narrative_analyst"
+      ],
+      "fan_narrative_analyst": [
+        "web_search_analyst"
+      ]
+    }
+  }
+}

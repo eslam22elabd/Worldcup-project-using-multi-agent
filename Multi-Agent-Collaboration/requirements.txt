@@ -1,0 +1,15 @@
+pytest==8.3.2
+
+# Needed by main_week2.py, which imports Week 2's agent code directly
+# (see src/adapters/week2_agent_adapter.py) to run a real discussion.
+openai==1.54.4          # Week 2's OpenRouterClient wraps the OpenAI SDK
+pyyaml==6.0.2            # Week 2's persona loader (YAML personas)
+python-dotenv==1.0.1     # Loads Week 2's .env (API keys, DATABASE_URL)
+requests==2.32.3         # Week 2's web_search_tool / general HTTP calls
+tavily-python==0.5.0     # Week 2's web_search_analyst tool
+
+# Needed transitively because main_week2.py also imports Week 1's
+# retrieval code (via knowledge_base_analyst's tool):
+psycopg2-binary>=2.9.10
+pgvector==0.3.2
+sentence-transformers==3.0.1

@@ -1,0 +1,24 @@
+# render.yaml — Render Blueprint for Qubeterra Platform
+# Docs: https://render.com/docs/blueprint-spec
+#
+# Deploy on Render without Docker:
+#   1. Push repo to GitHub
+#   2. In Render Dashboard → New + → Blueprint
+#   3. Select the repo — Render auto-detects this file
+# ==============================================================================
+
+services:
+  - type: web
+    name: qubeterra-platform
+    runtime: python
+    rootDir: Frontend-Deployment-Production   # folder inside the repo
+    buildCommand: "./build.sh"
+    startCommand: "uvicorn backend.main:app --host 0.0.0.0 --port $PORT"
+    plan: free                                # change to 'starter' if needed
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.0"
+      - key: PORT
+        value: "10000"        # Render free tier uses 10000 by default
+      - key: OPENROUTER_API_KEY
+        sync: false           # Will prompt you to fill this in the dashboard
