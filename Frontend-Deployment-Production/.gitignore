@@ -37,3 +37,6 @@ Thumbs.db
 .idea/
 *.local
 
+# Runtime generated discussion and analytics files
+data/discussions/*.json
+data/exports/*.json
